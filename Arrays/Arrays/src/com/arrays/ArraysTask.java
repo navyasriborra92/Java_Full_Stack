@@ -7,15 +7,19 @@ public class ArraysTask {
 	
 	public static void main(String[] args) {
 		ArraysTask at = new ArraysTask();
-//		at.byteArray();	
-//		at.shortArray();
-//		at.longArray();
-//		at.intArray();
-//		at.doubleArray();
-//		at.doubleArray();
+		at.byteArray();	
+		at.shortArray();
+		at.longArray();
+		at.intArray();
+		at.doubleArray();
+		at.doubleArray();
 		at.charArray();
 		at.stringArray();
 		at.booleanArray();
+		
+		for(int i =0; i<8; i++) {
+			continue;
+		}
 	}
 	
 	void byteArray() {
