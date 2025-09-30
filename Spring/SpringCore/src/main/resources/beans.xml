@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<bean id="st" class="com.model.Student">
+		<property name="studentId" value="1"></property>
+		<property name="name" value="Navya"></property>
+	</bean>
+	
+	
+	<bean id="st2" class="com.model.Student">
+		<constructor-arg index="1" value="FLM"></constructor-arg>
+		<constructor-arg index="0" value="2"></constructor-arg>
+	</bean>
+	
+	<bean id = "emp" class= "com.model.Employee" autowire = "constructor">
+		<property name = "empid" value = "1"></property>
+		<property name = "skills">
+			<list>
+				<value>Java</value>
+				<value>AI</value>
+				<value>SQL</value>
+				<value>HIBERNATE</value>
+			</list>
+		</property>
+		<property name = "softskills">
+			<set>
+			<value>communication</value>
+			<value>leadership</value>
+			<value>problem solving</value>
+			</set>
+		</property>		
+		<property name= "hobbies">
+			<map>
+				<entry key= "1" value = "dancing"></entry>
+				<entry key = "2" value = "painting"></entry>
+			</map>		
+		</property>		
+
+	</bean>
+	
+	<bean id = "address" class = "com.model.Address">
+		<property name= "doorno" value = "1"></property>
+		<property name = "pincode" value = "123"></property>
+	</bean>
+	
+</beans>

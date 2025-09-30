@@ -1,0 +1,15 @@
+/target/
+*.class
+*.log
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+/nbproject/private/
+/build/
+/dist/
+.vscode/
+.DS_Store
+Thumbs.db
+.metadata
